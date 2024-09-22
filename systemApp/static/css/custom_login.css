@@ -1,0 +1,5 @@
+/* custom_login.css */
+.login-logo img {
+    width: 300px;  /* Adjust this value to your preferred size */
+    height: auto;  /* Maintain aspect ratio */
+}

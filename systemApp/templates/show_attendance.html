@@ -1,0 +1,459 @@
+<!-- show_attendance.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Show Attendance</title>
+    <link rel="shortcut icon" href="../static/dgt.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-container {
+
+            margin-top: 20%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgb(205, 205, 205) 1px 1px 2px 2px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .attendance-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: 1px solid #28a745;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: #fff;
+            cursor: pointer;
+
+        }
+
+        .attendance-btn:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+
+        select {
+            margin-left: 45px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 300px;
+            margin-bottom: 10px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        input {
+            margin-left: 43px;
+            padding: 8px;
+            border-radius: 5px;
+            width: 300px;
+            margin-bottom: 10px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        select {
+            background-color: rgb(0, 0, 0) !important;
+            color: white !important;
+        }
+
+        input {
+            background-color: rgb(0, 0, 0) !important;
+            color: white !important;
+        }
+
+        footer {
+            position: relative;
+            bottom: -6em;
+            width: 100%;
+            text-align: center;
+            padding-top: 0px;
+            border: 0px solid red;
+        }
+
+        .attandance_button {
+            width: 35%;
+            margin: auto;
+            border: 0px solid red;
+        }
+
+        .attandImg {
+            overflow: hidden;
+            transform: scale(0.7);
+            border: 0px solid red;
+        }
+
+        @media (min-width: 0px) and (max-width: 876px) {
+            .container {
+                margin-top: 20px;
+            }
+
+            .register {
+                width: 100% !important;
+            }
+
+            .register a {
+                width: 300px !important;
+                margin-top: 10px;
+                border: 0px solid red;
+            }
+
+            h1 {
+                margin-top: 5%;
+            }
+
+            .attandImg {
+                display: none !important;
+                border: 5px solid red;
+                overflow: hidden;
+            }
+
+            select {
+                margin-left: 0px;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                text-align: center;
+            }
+
+            input {
+                margin-left: 0px;
+                padding: 8px;
+                border-radius: 5px;
+                width: 300px;
+                margin-bottom: 10px;
+                background-color: rgb(0, 0, 0);
+                color: white;
+            }
+
+            .attandance_button {
+                width: 100%;
+                margin: auto;
+                border: 0px solid red;
+            }
+        }
+
+        /* ---new css code  */
+        .btn {
+            --hue: 190;
+            position: relative;
+            padding: 1rem 3rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: #774FFA;
+            border: 1px solid #774FFA;
+            outline: transparent;
+            overflow: hidden;
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+            transition: 0.25s;
+        }
+
+        .btn:hover {
+            background: #774FFA
+        }
+
+        .btn-primary {
+            --hue: 187;
+        }
+
+        .btn-ghost {
+            color: #774FFA;
+            background-color: transparent;
+            border-color: #774FFA;
+        }
+
+        .btn-ghost:hover {
+            color: white;
+        }
+
+        .btn-shine {
+            color: white;
+        }
+
+        .btn-shine::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg,
+                    transparent,
+                    #774FFA,
+                    transparent);
+            transform: translateX(-100%);
+            transition: 0.6s;
+        }
+
+        .btn-shine:hover {
+            background: transparent;
+            box-shadow: -0.5px 0.5px 10px 1px #774ffa;
+
+        }
+
+        .btn-shine:hover::before {
+            transform: translateX(100%);
+        }
+
+        table tr td {
+            background-color: black !important;
+            color: white !important;
+        }
+
+        table,
+        th {
+            background-color: black !important;
+            color: white !important;
+            border: 1px solid white;
+
+        }
+
+        .logoutbutton {
+            position: absolute;
+            right: 50px;
+            top: 10px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+
+        @media screen and (min-width: 00px) and (max-width: 600px) {
+            .welcome {
+                margin-top: 4em;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body onload="getLocation()">
+
+    <!-- Header content here -->
+    <img class="background-video" src="../static/videos/node-ezgif.com-video-to-gif-converter.gif" alt="">
+    
+
+    {% if user.is_authenticated %}
+    <button type="button" class="btn logoutbutton mt-2 btn-success btn-ghost btn-shine"
+        onclick="window.location='{% url 'logout' %}'">Logout</button></p>
+    {% endif %}
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 register">
+                    <div class="form-container">
+                        <h2 class="mb-4 text-center">Cadet Check In / Out Status</h2>
+                        <form method="post" action="{% url 'show_attendance' %}">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+
+                            <div class="attandance_button">
+                                <button type="submit" class="attendance-btn  btn btn-primary btn-ghost btn-shine">Show
+                                    Status</button>
+                            </div>
+                            <p class="text-center text-danger mt-4" style="text-decoration: none;">
+                                <a href="{% url 'index' %}" style="color: rgb(255, 213, 0); text-decoration: none;">Back
+                                    to
+                                    Home</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6 attandImg">
+                    <img src="{% static 'second.gif' %}" alt="Registration Image" class=" mt-4 gifImage">
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="">Cadet Current Status</h2>
+
+                {% if matching_entries %}
+                <table class="table mt-3" id="example" class="table table-striped table-dark" style="width:100%">
+
+                    <thead>
+                        <tr>
+
+                            <th>Regiment Name:</th>
+                            <th>Cadet ID</th>
+                            <th>Attendance_Status</th>
+                            <th>InTime</th>
+                            <th>OutTime</th>
+                            <th>Count</th>
+
+                            <!-- Add more columns as needed -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for entry in matching_entries %}
+                        <tr>
+                            <td>{{ entry.Trade_name }}</td>
+                            <td>{{ entry.Roll_number }}</td>
+                            <td>{{ entry.Attendance_Status }}</td>
+                            <td>{{ entry.InTime }}</td>
+                            <td style="color: {% if entry.OutTime == '' %}red{% endif %}">
+                                {% if entry.OutTime == '' %}Absent{% else %}{{ entry.OutTime }}{% endif %}
+                            </td>
+
+
+                            <td>
+                                {% if entry.OutTime == '' %}
+                                Half day
+                                {% else %}
+                                Full day
+                                {% endif %}
+                            </td>
+
+                            <!-- Add more columns as needed -->
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% else %}
+                <p>No matching entries found for the provided trade and Cadet ID.</p>
+                {% endif %}
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer>
+
+        <div class="container-fluid" class="fixed-bottom">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-xl-3 p-2">MAC Address: {{ mac_address }}</div>
+                <div class="col-sm-12 col-md-3 col-xl-3 p-2">User's Public IP Address: <span
+                        id="publicIpAddress"></span></div>
+                <div class="col-sm-12 col-md-3 col-xl-3 p-2">Server's Local IP Address: {{ local_ip_address }}</div>
+                <div class="col-sm-12 col-md-3 col-xl-3 p-2" id="locationOutput"></div>
+            </div>
+        </div>
+
+    </footer>
+    <button id="getLocationBtn" style="display:none;">Get Location</button>
+    <!-- data table cdn link -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    <!-- data table is over -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- data table script -->
+    <script>
+        new DataTable('#example');
+
+        $(document).ready(function () {
+            // Make an AJAX request to get the public IP address
+            $.get("https://api64.ipify.org?format=json", function (data) {
+                // Update the content in the HTML element with id="publicIpAddress"
+                $("#publicIpAddress").text(data.ip);
+            });
+        });
+
+
+        $(document).ready(function () {
+            // Define the click handler for the button
+            $("#getLocationBtn").click(function () {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+                }
+            });
+
+            // Automatically click the button when the page loads
+            $("#getLocationBtn").click();
+
+            function successCallback(position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+
+                // Display the user's location in an HTML element
+                $("#locationOutput").text("Latitude: " + latitude + "\nLongitude: " + longitude);
+            }
+
+            function errorCallback(error) {
+                switch (error.code) {
+                    case error.PERMISSION_DENIED:
+                        alert("User denied the request for Geolocation.");
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        alert("Location information is unavailable.");
+                        break;
+                    case error.TIMEOUT:
+                        alert("The request to get user location timed out.");
+                        break;
+                    case error.UNKNOWN_ERROR:
+                        alert("An unknown error occurred.");
+                        break;
+                }
+            }
+        });
+    </script>
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            // Do something with the user's location
+            console.log("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude);
+        }
+
+        function showError(error) {
+            if (error.code === error.PERMISSION_DENIED) {
+                window.location.href = "{% url 'no_location_access' %}";
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

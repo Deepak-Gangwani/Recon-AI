@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RECON-AI | Coming Soon Page</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="../static/dgt.jpg" type="image/x-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../static/css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="../static/css/tooplate-kool-form-pack.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .video-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            /* margin-top: 100px; */
+        }
+
+        video {
+            width: 140%;
+            /* max-width: 1000px; */
+            /* max-height: 1000px; */
+            /* height: auto; */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .video-controls {
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .video-controls button {
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 24px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+
+    <!--
+
+Tooplate 2136 Kool Form Pack
+
+https://www.tooplate.com/view/2136-kool-form-pack
+
+Bootstrap 5 Form Pack Template
+
+-->
+</head>
+
+<body>
+
+    <main>
+
+
+        <video class="background-video" autoplay muted loop>
+            <source src="../static/videos/video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Header content here -->
+        {% include 'header.html' %}
+
+
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container" >
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mx-auto" style="    padding: 20px;
+                    background-color: rgba(0, 0, 0, 0.65);
+                    border-radius: 20px;">
+                        <small> Effortless Security with a Glance
+
+
+                            <a rel="nofollow" target="_blank"
+                                href="https://www.vecteezy.com/video/6618818-ai-head-wire-frame-loop"></a></small>
+                        <!-- please set the date time in the init.js file -->
+
+                        <h1 class="text-white mt-2 mb-4 pb-2">
+                            Unlock with Identity
+                        </h1>
+
+                        <!-- <ul class="countdown d-flex flex-wrap align-items-center">
+                               <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                                    <h2 class="countdown-title days">14</h2>
+                                    <span class="countdown-text">Days</span>
+                               </li>
+
+                               <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                                    <h2 class="countdown-title hours">10</h2>
+                                    <span class="countdown-text">Hours</span>
+                               </li>
+
+                               <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                                    <h2 class="countdown-title minutes">15</h2>
+                                    <span class="countdown-text">Minutes</span>
+                               </li>
+
+                               <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                                    <h2 class="countdown-title seconds">34</h2>
+                                    <span class="countdown-text">Seconds</span>
+                               </li>     
+                            </ul> -->
+
+                        <ul class="countdown d-flex flex-wrap align-items-center">
+                            <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-solid fa-eye fa-fade" style="color: white;"></i>
+                                <span class="countdown-text">IRIS RECOGNITION</span>
+                            </li>
+
+                            <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-solid fa-microphone-lines fa-fade" style="color: white;"></i>
+                                <span class="countdown-text">VOICE RECOGNITION</span>
+                            </li>
+
+                            <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-solid fa-face-smile fa-fade" style="color: white;"></i>
+                                <span class="countdown-text">FACE RECOGNITION</span>
+                            </li>
+
+                            <!-- <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                                    <i class="fas fa-hourglass-end countdown-title seconds"></i>
+                                    <span class="countdown-text">Seconds</span> -->
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col">
+                        <!-- <div class="video-content">
+                            <video id="biometricVideo" preload="metadata">
+                                <source src="../static/videos/recognition.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-controls">
+                                <button id="playButton"><i class="fas fa-play"></i></button>
+                                <button id="pauseButton" style="display: none;"><i class="fas fa-pause"></i></button>
+                            </div>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- 
+            <div class="video-wrap">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="../static/videos/video.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div> -->
+        </section>
+
+        <script>
+            const video = document.getElementById('biometricVideo');
+            const playButton = document.getElementById('playButton');
+            const pauseButton = document.getElementById('pauseButton');
+
+            playButton.addEventListener('click', () => {
+                video.play();
+                playButton.style.display = 'none';
+                pauseButton.style.display = 'inline';
+            });
+
+            pauseButton.addEventListener('click', () => {
+                video.pause();
+                playButton.style.display = 'inline';
+                pauseButton.style.display = 'none';
+            });
+        </script>
+
+
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="../static/js/jquery.min.js"></script>
+        <script src="../static/js/jquery.min.js"></script>
+        <script src="../static/js/bootstrap.bundle.min.js"></script>
+        <script src="../static/js/countdown.js"></script>
+        <script src="../static/js/init.js"></script>
+
+</body>
+
+</html>

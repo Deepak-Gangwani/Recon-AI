@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Unauthorized Access</title>
+    <link rel="shortcut icon" href="../static/dgt.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body onload="getLocation()">
+
+    
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1 class="mb-4" style="color: red; font-family: 'Arial', sans-serif;">Unauthorized Access</h1>
+            <p class="mb-4">Hey, you are not an authorized person.</p>
+            <p class="mb-4">Please contact Recon-AI for assistance.</p>
+            <!-- Icon for visual appeal -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-shield-slash-fill text-danger mb-4" viewBox="0 0 16 16">
+                <path d="M14.996 4.15A7.002 7.002 0 0 0 8 1.02a7.002 7.002 0 0 0-6.996 3.13L.405 6.925a.5.5 0 0 0 .355.832l6.248-.753a6.976 6.976 0 0 0 1.586-.432l1.212 1.212-.756 6.242a.5.5 0 0 0 .832.355l2.775-2.775c.083-.08.168-.158.255-.231l1.927-1.555a.5.5 0 0 0 .04-.769l-1.38-1.867 1.866-1.38 1.555 1.927c.075.088.152.172.231.256l2.775-2.775a.5.5 0 0 0-.352-.845l-6.244-.756L14.16.598a.5.5 0 0 0 .832.355l1.872-1.87a.5.5 0 0 0-.016-.702l-1.858-1.858a.5.5 0 0 0-.702-.016z"/>
+            </svg>
+            <!-- Logout link -->
+            <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(position) {
+        // Do something with the user's location
+        console.log("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude);
+    }
+
+    function showError(error) {
+        if (error.code === error.PERMISSION_DENIED) {
+            window.location.href = "{% url 'no_location_access' %}";
+        }
+    }
+</script>
+
+
+</body>
+</html>

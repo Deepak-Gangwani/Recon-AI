@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Internet Failure</title> 
+    <link rel="shortcut icon" href="../static/dgt.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- Font Awesome --> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+    <style> 
+        /* Custom styles */ 
+        .container { 
+            margin-top: 50px; 
+            text-align: center; 
+        } 
+        #reconnect-form { 
+            margin-top: 20px; 
+        } 
+    </style> 
+</head> 
+<body onload="getLocation()"> 
+
+    
+    <div class="container"> 
+        <h1>Internet Connection Failure</h1> 
+        <p id="connection-status"><i class="fas fa-exclamation-circle text-danger"></i> Please check your internet connection.</p> 
+        <form id="reconnect-form" onsubmit="reconnect(); return false;" style="display: none;"> 
+            {% csrf_token %} 
+            <button type="submit" class="btn btn-primary"><i class="fas fa-sync-alt"></i> Reconnect</button> 
+        </form> 
+         
+    </div> 
+ 
+    <!-- Bootstrap JS --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+    <script> 
+        // Function to check internet connection 
+        function checkInternetConnection() { 
+            fetch("http://www.google.com", { mode: 'no-cors' }) 
+                .then(function(response) { 
+                    // Internet connection is available, redirect to the homepage 
+                    window.location.href = "/"; 
+                }) 
+                .catch(function(error) { 
+                    // Internet connection is not available, show reconnect form 
+                    var connectionStatus = document.getElementById('connection-status'); 
+                    var reconnectForm = document.getElementById('reconnect-form'); 
+                    connectionStatus.innerHTML = '<i class="fas fa-exclamation-triangle text-warning"></i> Internet connection is not available. Please check your connection.'; 
+                    reconnectForm.style.display = 'block'; 
+                }); 
+        } 
+     
+        // Function to handle form submission 
+        function reconnect() { 
+            fetch("http://www.google.com", { mode: 'no-cors' }) 
+                .then(function(response) { 
+                    // Internet connection is available, redirect to the homepage 
+                    window.location.href = "/"; 
+                }) 
+                .catch(function(error) { 
+                    // Internet connection is not available, show error message 
+                    alert('Internet connection is still not available. Please try again.'); 
+                }); 
+        } 
+     
+        // Check internet connection on page load 
+        window.addEventListener('load', function() { 
+            checkInternetConnection(); 
+        }); 
+     
+        // Check internet connection periodically 
+        setInterval(checkInternetConnection, 5000); // Check every 5 seconds 
+    </script> 
+
+<script>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(position) {
+        // Do something with the user's location
+        console.log("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude);
+    }
+
+    function showError(error) {
+        if (error.code === error.PERMISSION_DENIED) {
+            window.location.href = "{% url 'no_location_access' %}";
+        }
+    }
+</script>
+
+     
+</body> 
+</html>
