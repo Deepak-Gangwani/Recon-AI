@@ -99,63 +99,60 @@ ATTANDSYSTEM/
 
 ## 📝 Project Implementation
 
-### 🛠️ Task 1: Data Ingestion & Processing
+### 🛠️ Task 1: Face Identification Security Layer
 
-#### Description:
-In this task, a Python script is developed to simulate the continuous stream of machine data (including parameters such as temperature, speed, and status). The script is designed to read this data every 10 seconds from a specified JSON file or a mocked endpoint.
+#### Task Description:
+Develop a Python script to simulate real-time face identification using a security layer. The script should process data continuously, identifying faces through live data feeds (simulated with JSON data or a mocked endpoint). The system will analyze and identify faces at intervals.
 
-![1_ebmDMPXU9xqgwqdob0XbKQ-ezgif com-crop](https://github.com/user-attachments/assets/b0ff241a-9e49-4a05-b4ad-26a294fb7125)
+![show_attendance](https://github.com/user-attachments/assets/ead70c3f-6f2d-44aa-b0aa-23a8b31137cd)
 
-###### Key Features:
-- Data Reading: The script reads machine data at regular intervals (every 10 seconds).
-- Data Transformation: It calculates a moving average for each parameter over the last five readings, providing insights into the machine's performance.
-- Output Format: The transformed data is printed in JSON format for easy readability and further processing.
-  
-##### Evaluation Criteria:
-- Code clarity and simplicity to ensure maintainability.
-- Correct implementation of moving average calculation to ensure accuracy.
-- Efficient use of Python’s standard libraries to optimize performance.
+#### Key Features:
+- **Face Data Processing**: Processes and identifies face data at specified intervals.
+- **Identification Accuracy**: Uses algorithms to ensure accurate identification of faces in each frame.
+- **Output Format**: Outputs face identification results in JSON format, optimized for further processing.
 
-### 🌐 Task 2: Basic REST API Development
-#### Description:
-This task involves building a simple REST API using Flask that exposes two key endpoints.
+#### Evaluation Criteria:
+- **Code Clarity**: Code should be organized and easily understandable for maintenance and scalability.
+- **Identification Accuracy**: Algorithms must be optimized to ensure precise face recognition.
+- **Performance Optimization**: Efficient handling of live data processing for minimal delay.
 
-![RESTAPI](https://github.com/user-attachments/assets/78448e0b-d8ac-411b-98c5-2776d4b7f58e)
+---
 
-##### Endpoints:
-- [GET] /data: Returns the processed machine data as JSON, allowing clients to retrieve the latest calculated metrics.
-- [POST] /status: Enables updating the machine's job status (e.g., “STARTED”, “COMPLETED”). This helps keep track of the machine's operational state.
-  
-##### Requirements:
-- Input validation for the /status endpoint to ensure only acceptable statuses are processed.
-- Management of machine status updates in memory for quick access and manipulation.
-  
-##### Evaluation Criteria:
-- Ability to set up a basic Flask API structure.
-- Proper input validation and error handling to enhance robustness.
-- Well-organized code to improve readability and maintainability.
+### 🌐 Task 2: Iris Identification Security Layer
 
-### 📈 Task 3: Simple Data Analytics
+#### Task Description:
+Develop a Python program to simulate iris identification as part of a security layer. The program will process iris data and provide functionality for retrieving and updating iris recognition status, ensuring secure and accurate access control.
 
-#### Description:
-In this final task, a Python function is implemented to perform data analytics on the machine data. The function reads a list of timestamps and values (e.g., machine speed) and calculates various statistics.
+![eye-scanner](https://github.com/user-attachments/assets/d7a4c8ac-4cf3-4fee-8424-1261869cd846)
 
-![images](https://github.com/user-attachments/assets/63adfb89-9fde-4077-a2c8-66427d343b0e)
+#### Key Features:
+- **Data Retrieval**: Retrieves processed iris data in JSON format for further processing.
+- **Status Update**: Allows for updating the identification status (e.g., “MATCHED,” “NOT MATCHED”) to monitor security status in real-time.
+- **Data Security**: Ensures secure handling of sensitive iris data.
 
-##### Calculations:
-- Average Value: Computes the average of the collected data over the entire period.
-- Maximum and Minimum Values: Identifies the peak and lowest readings for performance monitoring.
-  
-##### Bonus Feature:
-If time permits, the candidate can extend the function to detect anomalies—specifically, any values that deviate by more than 20% from the calculated average. This enhances the functionality by providing early warning indicators for potential issues.
+#### Evaluation Criteria:
+- **Program Structure**: Well-organized code for clarity and maintainability.
+- **Data Security**: Handles iris data securely, preserving privacy and accuracy.
+- **Robustness**: Effective input validation and error handling for dependable performance.
 
-![outlier2](https://github.com/user-attachments/assets/040d077e-3939-4159-b9c9-59e1ef5e16df)
+---
 
-##### Evaluation Criteria:
-- Accuracy of calculations to ensure reliable data analytics.
-- Code efficiency and readability to facilitate future modifications.
-- Bonus points awarded for implementing anomaly detection, adding extra value to the solution.
+### 📈 Task 3: Voice Identification Security Layer
 
+#### Task Description:
+Create a Python program to simulate voice identification as part of a security layer. The program will analyze voice data to perform identification and calculate various metrics to ensure secure and accurate voice recognition.
+
+![voice-gif](https://github.com/user-attachments/assets/c8972cca-162c-4767-8246-f1c06c1106ba)
+
+#### Key Features:
+- **Voice Data Processing**: Processes and analyzes voice data to identify individuals accurately.
+- **Metric Calculations**: Computes metrics such as frequency analysis, average pitch, and amplitude to support identification accuracy.
+- **Output Format**: Provides processed voice identification results in JSON format for efficient data handling.
+
+#### Evaluation Criteria:
+- **Program Structure**: Code should be organized and easy to maintain.
+- **Identification Accuracy**: Ensures that voice recognition metrics are accurately calculated.
+- **Performance Optimization**: Efficient handling of voice data for real-time identification with minimal delay.
 
 
 ## Implementation Details
