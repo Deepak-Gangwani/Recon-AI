@@ -1,5 +1,4 @@
-# Recon-AI (Project is created as per IBM Guidelines) ![image](https://github.com/user-attachments/assets/dd6cc40f-5c54-4d01-9d16-be84bef18190)
-
+# Recon-AI (Project is created as per IBM Guidelines) ![image](https://github.com/user-attachments/assets/72e035a4-62da-4a27-91d2-7e4bca470511)
 
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
 ![Django](https://img.shields.io/badge/Django-3.2%2B-green)
