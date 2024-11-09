@@ -26,22 +26,9 @@
 
 **The Recon AI System** is an innovative solution in biometric authentication, integrating advanced technologies for face, voice, and iris recognition. In response to the ever-evolving landscape of security threats, this multi-modal approach provides a robust and highly secure authentication method. By combining multiple biometric modalities, the system achieves a high degree of accuracy and reliability, essential for safeguarding sensitive information and ensuring that access is restricted to authorized users only.    
 
-
-
-
-
 In addition to biometric authentication, the Recon AI System utilizes location-based security measures, including MAC address, IP address, and geographical data (longitude and latitude), further enhancing its protective capabilities. These additional security layers ensure that system access is limited to pre-approved locations, adding an extra safeguard against unauthorized access.
 
 ![recognition-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/81c623a6-65da-4e0e-b9f0-663ef5c7c428)
-
-<p align="center">
-    <img src="https://github.com/user-attachments/assets/174d4a02-313c-46db-a5f3-5b766fb86692" alt="Image 1" width="150" />
-    <img src="https://github.com/user-attachments/assets/cfd66347-9c38-4e1f-8b60-74bf2b3dc464" alt="Image 2" width="150" />
-    <img src="https://github.com/user-attachments/assets/2523a428-3b97-448d-8c32-d27287e7675e" alt="Image 3" width="150" />
-</p>
-
-![image](https://github.com/user-attachments/assets/29d4dc02-4c50-4781-8156-fbe3559d5a99)
-
 
 Reviewed literature underscores the importance of multi-modal biometric systems like the Recon AI System in addressing modern security challenges. With enhanced precision and resilience, this system represents a significant step forward in biometric authentication technology, offering a powerful solution for both individuals and organizations seeking to protect valuable data and assets.
 
