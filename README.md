@@ -1,9 +1,6 @@
 # Recon-AI
 ## Project is created as per IBM Guidelines 
 
-![image](https://github.com/user-attachments/assets/567c1020-eab5-492f-901a-c80494c4231a)
-
-
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue) ![Flask](https://img.shields.io/badge/Flask-2.0.3-green) ![API](https://img.shields.io/badge/API-REST-orange) ![Data Processing](https://img.shields.io/badge/Data%20Processing-Ingestion-blueviolet)
 
 ## 📖 Project Overview
