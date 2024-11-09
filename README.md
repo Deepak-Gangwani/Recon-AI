@@ -33,17 +33,17 @@ In addition to biometric authentication, the Recon AI System utilizes location-b
 Reviewed literature underscores the importance of multi-modal biometric systems like the Recon AI System in addressing modern security challenges. With enhanced precision and resilience, this system represents a significant step forward in biometric authentication technology, offering a powerful solution for both individuals and organizations seeking to protect valuable data and assets.
 
 
-### 🔑 Key Features
+### 🔑 Key Features of Multi Layered Authentication
 
-- **Simulated Data Ingestion**: Reads machine data every 10 seconds.
-- **REST API Endpoints**: Fetch processed data and update machine status.
-- **Data Analytics**: Provides insights like average, max, min, and anomaly detection.
+- **Face Recognition Layer**: Reads machine data every 10 seconds.
+- **Iris Identification Layer**: Fetch processed data and update machine status.
+- **Voice Identification**: Provides insights like average, max, min, and anomaly detection.
 
 ---
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/your_username/machine-data-gif.gif" width="600" alt="Machine Data Monitoring in Action" />
-    <p>Machine Data Monitoring - Ingestion & Analytics Workflow</p>
+    <p>Complete Project Workflow and Demo</p>
 </div>
 
 ---
@@ -51,15 +51,36 @@ Reviewed literature underscores the importance of multi-modal biometric systems 
 ## 🛠️ Project Structure
 
 ```plaintext
-Ingestion-Api-Analytics-Task/
-├── app.py                # Flask API server
-├── data.json             # Sample json file
-├── ingestion.py          # Data ingestion and processing
-├── analytics.py          # Data analytics functions
-├── README.md             # Project documentation
-├── requirements.txt      # Dependencies
-└── templates/            # Folder for HTML templates
-    └── index.html        # Main HTML template file
+ATTANDSYSTEM/
+├── attand_img
+├── attandSystem
+├── capture_audio
+├── capture_image
+├── dataSet
+├── deepakenv
+├── deepakenv2
+├── recon-ai-logo-file
+├── systemApp
+│   ├── __pycache__
+│   ├── middleware
+│   ├── migrations
+│   ├── static
+│   ├── templates
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── haarcascade_eye.xml
+│   ├── haarcascade_frontalface_default.xml
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── attendance_data.csv
+├── db.sqlite3
+├── manage.py
+├── requirements.txt
+└── README.md
 ```
 
 ## Design Implementation
