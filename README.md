@@ -1,6 +1,22 @@
 # Recon-AI
 ## Project is created as per IBM Guidelines 
 
+![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
+![Django](https://img.shields.io/badge/Django-3.2%2B-green)
+![API](https://img.shields.io/badge/API-REST-orange)
+![Data Processing](https://img.shields.io/badge/Data%20Processing-Ingestion-blueviolet)
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-TensorFlow-lightgrey)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit%20Learn-lightblue)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-OpenCV-brightgreen)
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow)
+![jQuery](https://img.shields.io/badge/jQuery-3.5.1-blue)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.1-purple)
+![Anti Spoofing](https://img.shields.io/badge/Anti%20Spoofing-Face%20Liveness-red)
+![Ultralytics](https://img.shields.io/badge/Ultralytics-YOLOv5-lightgrey)
+
+
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue) ![Flask](https://img.shields.io/badge/Flask-2.0.3-green) ![API](https://img.shields.io/badge/API-REST-orange) ![Data Processing](https://img.shields.io/badge/Data%20Processing-Ingestion-blueviolet)
 
 ## 📖 Project Overview
