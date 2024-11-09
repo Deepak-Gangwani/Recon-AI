@@ -65,6 +65,22 @@ Ingestion-Api-Analytics-Task/
     └── index.html        # Main HTML template file
 ```
 
+## Design Implementation
+
+- ER Model
+ ![image](https://github.com/user-attachments/assets/6d4f2913-0c8b-40a0-bfed-2737fda66b75)
+
+- Facial Recognition
+ ![image](https://github.com/user-attachments/assets/fc75fa54-fcd7-4a63-8a9a-2eb1b141fd87)
+
+- Voice Recognition
+ ![image](https://github.com/user-attachments/assets/8478972c-e951-4906-b606-a5120ea937fe)
+
+- Iris Recognition
+ ![image](https://github.com/user-attachments/assets/b6fa0323-8ee2-4680-afac-e889eec7c58e)
+
+
+
 ## 📝 Project Implementation
 
 ### 🛠️ Task 1: Data Ingestion & Processing
