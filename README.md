@@ -135,27 +135,60 @@ The Admin Panel of Recon-Al is a robust, user-friendly interface that centralize
 
 ## Testing
 Step 1:- First, you need to fill out the registration form
- 
-Step 2:- First, you need to fill out the form details and look at the camera Do move your face too much for the face recognition registration
- 
-Step 3:- Now, for eye recognition, you need to bring your eyes close to the camera and wait until the system shows that the submission was successful
- 
-Step 4:- Now, for voice recognition, click on the third step for voice. When the pop-up appears for recording, speak clearly and a bit louder. At the end, the system will show that your voice registration is successful
- 
-Step 5:- Your registration is complete It was done step by step: first, face recognition; then, eye recognition; and finally, voice recognition. Now, you can enter your attendance with just one click using any recognition system by filling out the form details
- 
-Step 5:- Now the registered user can mark him present for the day.
- 
- 
-Step 6:- Face scan is done now registered user has to complete second layer of security which iris scan and eye scan.
- 
- 
-Step 7:- Eye scan is done now registered user has to complete third layer of security which voice scan.
+![image](https://github.com/user-attachments/assets/23074d19-a956-46a1-bdcd-488f8a53e674)
 
  
+Step 2:- First, you need to fill out the form details and look at the camera Do move your face too much for the face recognition registration
+![image](https://github.com/user-attachments/assets/bb260fc3-e5bc-4462-bf47-977137df4bd9)
+![image](https://github.com/user-attachments/assets/71fc46e1-9f51-4759-aabc-6e0ba5d86de5)
+
+
  
-Step 8:-After scanning all three layer the registered user check in status will be updated to present for the current date.
+Step 3:- Now, for eye recognition, you need to bring your eyes close to the camera and wait until the system shows that the submission was successful
+ ![image](https://github.com/user-attachments/assets/1f5a3d38-900c-43ca-a137-232fefe6e25e)
+
+Step 4:- Now, for voice recognition, click on the third step for voice. When the pop-up appears for recording, speak clearly and a bit louder. At the end, the system will show that your voice registration is successful
+![image](https://github.com/user-attachments/assets/a701a297-217b-477e-b7a7-a25cdcf171f0)
+![image](https://github.com/user-attachments/assets/5a4a3e82-be5e-43bc-9a8f-c9ab50a1e540)
+
  
+Step 5:- Your registration is complete It was done step by step: first, face recognition; then, eye recognition; and finally, voice recognition. Now, you can enter your attendance with just one click using any recognition system by filling out the form details
+![image](https://github.com/user-attachments/assets/602c56cf-e7eb-4822-b200-242e504f5dc7)
+
+ 
+Step 6:- Now the registered user can mark him present for the day.
+![image](https://github.com/user-attachments/assets/d8095e3d-7fbe-47f0-8c19-d941af47a0b7)
+![image](https://github.com/user-attachments/assets/34474c32-0c2d-47c8-b014-7bb5840f94a1)
+
+ 
+Step 7:- Face scan is done now registered user has to complete second layer of security which iris scan and eye scan.
+![image](https://github.com/user-attachments/assets/f773c980-e7c9-4bfa-899a-1df4a7783275)
+![image](https://github.com/user-attachments/assets/2f2864df-ee2a-4bb5-ae72-d322f1400844)
+
+ 
+Step 8:- Eye scan is done now registered user has to complete third layer of security which voice scan.
+![image](https://github.com/user-attachments/assets/a208339a-2a87-49b9-b24b-ea43ab246b09)
+![image](https://github.com/user-attachments/assets/964b684f-1bbd-44d3-ad79-496e6e0dbbd8)
+
+ 
+Step 9:-After scanning all three layer the registered user check in status will be updated to present for the current date.
+ 
+![image](https://github.com/user-attachments/assets/26f55ef9-249f-498a-a0a2-e59fd9d12041)
+![image](https://github.com/user-attachments/assets/a48dd8ff-c1f1-4423-9d52-a68d1f4a2ca5)
+
+Step 10:- Your attendance and all the data will be stored in your admin panel with a secure database
+![image1](https://github.com/user-attachments/assets/48e29b50-b369-45e1-855d-1f68e2bfe04d)
+![image2](https://github.com/user-attachments/assets/39902d16-28de-4940-a289-9abe82153d33)
+![image3](https://github.com/user-attachments/assets/d60bf137-8043-4c89-8cb3-46a95f403d24)
+![image4](https://github.com/user-attachments/assets/e56cc22e-a20e-4476-80ad-0325215234d9)
+![image5](https://github.com/user-attachments/assets/12d26227-9097-458c-9cc4-ce95ea5f2ea4)
+![image6](https://github.com/user-attachments/assets/65e9816c-ce5b-42d6-9619-d617aadc6cdc)
+![image7](https://github.com/user-attachments/assets/0adbbcf0-3727-4317-b61e-d835971d191f)
+![image8](https://github.com/user-attachments/assets/8ae4aad3-06ea-4fa6-8076-ec1e721f4d32)
+![image9](https://github.com/user-attachments/assets/956fcc04-e237-4379-bafa-1786d9cbe978)
+
+
+
 
 
 
