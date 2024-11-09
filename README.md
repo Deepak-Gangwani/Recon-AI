@@ -34,6 +34,9 @@
 
 In addition to biometric authentication, the Recon AI System utilizes location-based security measures, including MAC address, IP address, and geographical data (longitude and latitude), further enhancing its protective capabilities. These additional security layers ensure that system access is limited to pre-approved locations, adding an extra safeguard against unauthorized access.
 
+![image](https://github.com/user-attachments/assets/29d4dc02-4c50-4781-8156-fbe3559d5a99)
+
+
 Reviewed literature underscores the importance of multi-modal biometric systems like the Recon AI System in addressing modern security challenges. With enhanced precision and resilience, this system represents a significant step forward in biometric authentication technology, offering a powerful solution for both individuals and organizations seeking to protect valuable data and assets.
 
 
