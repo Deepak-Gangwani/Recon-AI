@@ -1,8 +1,8 @@
-# 🚀 **Recon-AI** 🚀  
-### Developed in Alignment with IBM Guidelines
-
-![Recon-AI Logo](https://github.com/user-attachments/assets/72e035a4-62da-4a27-91d2-7e4bca470511)
-
+<p align="center">
+  <h1>🚀 <strong>Recon-AI</strong> 🚀</h1>
+  <h3>Developed in Alignment with IBM Guidelines</h3>
+  <img src="https://github.com/user-attachments/assets/72e035a4-62da-4a27-91d2-7e4bca470511" alt="Recon-AI Logo" />
+</p>
 
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
 ![Django](https://img.shields.io/badge/Django-3.2%2B-green)
