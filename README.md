@@ -103,7 +103,7 @@ ATTANDSYSTEM/
 
 #### Task Description:
 Develop a Python script to simulate real-time face identification using a security layer. The script should process data continuously, identifying faces through live data feeds (simulated with JSON data or a mocked endpoint). The system will analyze and identify faces at intervals.
-![take_attandance](https://github.com/user-attachments/assets/6bfc570c-cd4d-4097-8944-df5f5598a22f)
+![main_register](https://github.com/user-attachments/assets/8f9d569f-07e4-4bbd-b1fe-d1ef9b3800c5)
 
 #### Key Features:
 - **Face Data Processing**: Processes and identifies face data at specified intervals.
