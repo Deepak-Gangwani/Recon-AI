@@ -43,7 +43,7 @@ Reviewed literature underscores the importance of multi-modal biometric systems 
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/your_username/machine-data-gif.gif" width="600" alt="Machine Data Monitoring in Action" />
-    <p>Complete Project Workflow and Demo</p>
+    <h1>Complete Project Workflow and Demo of Recon-AI</h1>
 </div>
 
 ---
