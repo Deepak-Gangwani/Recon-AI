@@ -106,7 +106,9 @@ The About Us Page offers information about the team or organization behind the R
 #### Access Authentication
 Implementing access authentication using face, eye, and voice recognition involves capturing and processing biometric data, extracting unique features, and matching them against stored profiles. Each method has its strengths and applications, making them suitable for different security requirements.
 
- ![image](https://github.com/user-attachments/assets/3260c850-5d09-4bba-8d0c-2763a08a6d85)
+![image](https://github.com/user-attachments/assets/f1580c0f-edd6-46b9-b22b-10f8141c4156)
+
+![image](https://github.com/user-attachments/assets/3260c850-5d09-4bba-8d0c-2763a08a6d85)
 
 #### Contact Us
 The Contact Page allows users to get in touch with the development team or support staff. This page includes a contact form created with Django, which captures user input such as name, email, and message. Server-side validation is implemented to ensure that the form data is complete and correctly formatted. Once submitted, the contact information can be sent to a designated email address or stored in a database for further follow-up. This page is essential for maintaining communication with users and addressing their inquiries or feedback.
