@@ -4,7 +4,6 @@
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
 ![Django](https://img.shields.io/badge/Django-3.2%2B-green)
 ![API](https://img.shields.io/badge/API-REST-orange)
-![Data Processing](https://img.shields.io/badge/Data%20Processing-Ingestion-blueviolet)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-TensorFlow-lightgrey)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit%20Learn-lightblue)
 ![Computer Vision](https://img.shields.io/badge/Computer%20Vision-OpenCV-brightgreen)
