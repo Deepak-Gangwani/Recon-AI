@@ -1,5 +1,4 @@
-# Recon-AI
-## Project is created as per IBM Guidelines 
+# Recon-AI (## Project is created as per IBM Guidelines)
 
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
 ![Django](https://img.shields.io/badge/Django-3.2%2B-green)
