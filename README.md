@@ -1,4 +1,8 @@
-# Recon-AI: Developed in Alignment with IBM Guidelines ![image](https://github.com/user-attachments/assets/72e035a4-62da-4a27-91d2-7e4bca470511)
+# 🚀 **Recon-AI** 🚀  
+### Developed in Alignment with IBM Guidelines
+
+![Recon-AI Logo](https://github.com/user-attachments/assets/72e035a4-62da-4a27-91d2-7e4bca470511)
+
 
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
 ![Django](https://img.shields.io/badge/Django-3.2%2B-green)
